@@ -9,9 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Assuming you have specific hex codes from the design
-        primary: "#2e42ff", // Replace with the actual color code
-        secondary: "##2efff5", // Replace with the actual color code
+        "brand-blue": "#243c5a", // Adjust the color as per your design needs
+        "brand-red": "#f56565",
       },
       backgroundImage: (theme) => ({
         "header-pattern": "url('/path-to-header-background-image')",

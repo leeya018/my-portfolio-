@@ -1,4 +1,5 @@
 // components/Header.tsx
+import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
@@ -8,10 +9,14 @@ const Header = () => {
         {/* Logo and Home Link */}
         <Link href="/">
           <div className="flex items-center">
-            <img
-              src="/path-to-your-logo.png"
+            <Image
+              src={
+                "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+              width={300}
+              height={300}
               alt="Dropship Logo"
-              className="h-8 mr-4"
+              className="h-12 w-12 mr-4 rounded-full  bg-center"
             />
             <span className="hidden md:block font-semibold text-xl text-red-600">
               Dropship
